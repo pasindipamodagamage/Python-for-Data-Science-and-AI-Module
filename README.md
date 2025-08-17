@@ -13,7 +13,10 @@ It answers key business questions such as:
 
 1. **Data Preparation**
    - Load cleaned dataset (`online_retail_cleaned.csv`)
-   - Calculate revenue as:  
+   - Calculate revenue as:
+     
+  
+   - 
      ```python
      Revenue = Quantity * Price
      ```
