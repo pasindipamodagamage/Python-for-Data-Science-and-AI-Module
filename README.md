@@ -75,36 +75,31 @@ This ensures clear collaboration and maintainable project history.
 
 ---
 
-## 🔍 Analysis Phases
+## 🧩 Analysis Phases
 
-The project follows a **phased approach**:
+This project follows a structured, **phase-wise data analysis workflow**:
 
-1. **Data Cleaning & Preprocessing** 🧹
+### Phase 1: Data Cleaning & Preprocessing 🧹
+- Remove missing Customer IDs and canceled orders.  
+- Filter out non-product codes and zero-priced items.  
+- Convert data types, create `TotalPrice`, and extract date features (`Year`, `Month`, `DayOfWeek`, `Hour`).  
 
-   * Handle missing values, duplicates, cancellations
-   * Correct data types, generate `TotalPrice`, extract temporal features
+### Phase 2: Exploratory Data Analysis (EDA) 📊
+- Analyze **sales trends**: monthly, daily, and hourly revenue patterns.  
+- Visualize **geographic footprint** and UK vs international sales.  
+- Evaluate **top products** by quantity and revenue.
 
-2. **Exploratory Data Analysis (EDA)** 📊
+### Phase 3: RFM Customer Segmentation 💳
+- Calculate **Recency, Frequency, and Monetary (RFM)** metrics per customer.  
+- Visualize distributions and identify high-value customer segments.  
 
-   * Temporal analysis: monthly/yearly trends, peak hours/days
-   * Product performance: top 10 by quantity vs. revenue
-   * Geographic analysis: top countries, domestic vs. international revenue
+### Phase 4: Strategic Insights & Recommendations 📝
+- Identify **retail vs. wholesaler customers**.  
+- Provide actionable **business strategies** for different customer segments.  
 
-3. **Advanced Analytics – RFM Segmentation** 💳
-
-   * Calculate Recency, Frequency, Monetary metrics per customer
-   * Assign quintile-based RFM scores
-   * Map segments to business-friendly categories (Champions, Loyal, At-Risk, etc.)
-
-4. **Strategic Recommendations** 📝
-
-   * Investigate retail vs. wholesaler purchasing patterns
-   * Recommend targeted strategies for marketing, retention, and inventory
-
-5. **Data Enrichment via API Integration** 💱
-
-   * Fetch daily USD and EUR exchange rates via API
-   * Convert top transactions’ revenue for multi-currency insights
+### Phase 5: Data Enrichment via API 🌐
+- Integrate **currency conversion API** to enrich transaction data.  
+- Add USD and EUR equivalents for top transactions to support international analysis.
 
 ---
 
@@ -134,3 +129,4 @@ The project follows a **phased approach**:
 - **Team Members:** All contributors to data cleaning, analysis, and reporting
 
 ---
+
