@@ -1,111 +1,136 @@
-# Python for Data Science and AI Module
+# 📒 Python for Data Science & AI Module – Strategic Growth Analysis
 
-**Team Collaboration Project**
-
----
-
-##  Project Overview
-
-This repository houses the **Python for Data Science and AI Module**, featuring real-world data analysis and visualization tasks. It serves as a hands-on learning platform and collaborative environment for contributors.
-
-Currently included artifacts:
-
-- **`online_retail.csv`** – Raw online retail transaction data.
-- **`online_retail_cleaned.csv`** – Cleaned version of the retail data.
-- **`unique_gifts_ltd.ipynb`** – Jupyter notebook with detailed data exploration, cleaning, analysis, and visualizations.
+**Team Project | Semester 3, 2025**  
+**Project Title:** Strategic Growth Analysis for a UK-Based E-Commerce Retailer (Unique Gifts Ltd.)
 
 ---
 
-##  Getting Started
+## 🚀 Project Overview
 
-Clone the repository and switch into its directory:
+This repository contains a **hands-on collaborative project** for the Python for Data Science & AI module (ITS 2122). The focus is on performing a **data-driven strategic analysis** for the UK-based online retailer, **Unique Gifts Ltd.**, using real transactional data.  
+
+The project demonstrates **end-to-end data science workflows**, from data cleaning and EDA to advanced analytics and business-focused insights.
+
+**Objectives:**
+
+- 📈 Analyze sales trends, seasonality, and growth patterns  
+- 🛍️ Optimize product portfolio (high-volume vs. high-revenue items)  
+- 🌍 Map geographic footprint and international opportunities  
+- 💳 Segment customers using RFM analysis  
+- 🏢🛒 Distinguish retail vs. wholesaler behavior  
+- 💱 Enrich data using external API (currency conversion)  
+- 📝 Produce actionable recommendations for strategic decision-making  
+
+---
+
+## 📁 Repository Structure
+
+| File / Folder | Description |
+|---------------|-------------|
+| `online_retail.csv` | Raw online retail transactional dataset |
+| `online_retail_cleaned.csv` | Cleaned and preprocessed dataset |
+| `unique_gifts_ltd.ipynb` | Jupyter Notebook covering EDA, cleaning, analysis, visualizations, and RFM segmentation |
+| `README.md` | Project overview, setup instructions, and contribution guidelines |
+
+---
+
+## 🛠 Getting Started
+
+Clone this repository and move into its directory:
 
 ```bash
 git clone https://github.com/pasindipamodagamage/Python-for-Data-Science-and-AI-Module.git
 cd Python-for-Data-Science-and-AI-Module
-````
 
-Before contributing, please follow the branching conventions described in the **Branching & Workflow** section below.
+
+Ensure you have **Python 3.9+** and the following libraries installed:
+
+```bash
+pip install pandas numpy matplotlib seaborn requests
+```
 
 ---
 
-## Branching & Workflow
+## 🌿 Branching & Workflow
 
-Use the following branch naming pattern when creating new branches:
+Follow this branch naming pattern for consistency:
 
 ```
 <type>/<short-description>/<your-name>/<YYYYMMDD>
 ```
 
-* **type**: `feature`, `bugfix`, `hotfix`, or `chore`
-* **short-description**: brief hyphen-separated summary of the task
-* **your-name**: your full name or GitHub handle
-* **YYYYMMDD**: current date in year-month-day format (e.g., `20250814`)
+* **type:** `feature`, `bugfix`, `hotfix`, `chore`
+* **short-description:** brief hyphen-separated task summary
+* **your-name:** GitHub handle or full name
+* **YYYYMMDD:** current date
 
-### Example:
+**Example:**
 
 ```bash
-# Create and switch to a new feature branch
-git checkout -b feature/data-cleaning/pasindi/20250814
-
-# Push to remote and track
-git push -u origin feature/data-cleaning/pasindi/20250814
+git checkout -b feature/data-cleaning/pasindi/20250830
+git push -u origin feature/data-cleaning/pasindi/20250830
 ```
 
-This makes collaboration transparent and organized, while keeping the project history clear.
+This ensures clear collaboration and maintainable project history.
 
 ---
 
-## Data Files
+## 🔍 Analysis Phases
 
-### `online_retail.csv`
+The project follows a **phased approach**:
 
-* Original dataset containing online retail transactions.
+1. **Data Cleaning & Preprocessing** 🧹
 
-### `online_retail_cleaned.csv`
+   * Handle missing values, duplicates, cancellations
+   * Correct data types, generate `TotalPrice`, extract temporal features
 
-* Cleaned version with preprocessing steps applied (e.g., null handling, format normalization).
+2. **Exploratory Data Analysis (EDA)** 📊
 
-### `unique_gifts_ltd.ipynb`
+   * Temporal analysis: monthly/yearly trends, peak hours/days
+   * Product performance: top 10 by quantity vs. revenue
+   * Geographic analysis: top countries, domestic vs. international revenue
 
-* Jupyter Notebook covering:
+3. **Advanced Analytics – RFM Segmentation** 💳
 
-  * Exploratory Data Analysis (EDA)
-  * Data cleaning workflows
-  * Analysis logic and visual insights
-  * Conclusions and recommendations
+   * Calculate Recency, Frequency, Monetary metrics per customer
+   * Assign quintile-based RFM scores
+   * Map segments to business-friendly categories (Champions, Loyal, At-Risk, etc.)
 
----
+4. **Strategic Recommendations** 📝
 
-## Contributing Guidelines
+   * Investigate retail vs. wholesaler purchasing patterns
+   * Recommend targeted strategies for marketing, retention, and inventory
 
-1. **Fork** the repository.
-2. **Create a branch** following the naming pattern above.
-3. **Implement changes**, ensuring clarity, readability, and includes comments where appropriate.
-4. **Test** your changes thoroughly.
-5. Submit a **Pull Request (PR)** describing:
+5. **Data Enrichment via API Integration** 💱
 
-   * What you did
-   * Why it’s needed
-   * Any screenshots or data output (if applicable)
-6. One of the maintainers will **review** and merge the PR after discussion.
+   * Fetch daily USD and EUR exchange rates via API
+   * Convert top transactions’ revenue for multi-currency insights
 
 ---
 
-## License & Acknowledgments
+## 🤝 Contribution Guidelines
 
-Specify your license here (e.g., MIT, Apache 2.0) to clarify usage rights.
+1. **Fork** the repository
+2. **Create a branch** following the naming convention
+3. **Implement changes** with clear code and comments
+4. **Test** your modifications thoroughly
+5. **Submit a Pull Request (PR)** with:
 
-Acknowledgments:
+   * Description of changes
+   * Justification for edits
+   * Screenshots or sample outputs (if applicable)
 
-* Crunchy insight to the creators or data providers.
-* Any tools or libraries that powered the analysis.
-* Shout-outs to team members for their contributions.
+**Code Style:**
+
+* Follow **PEP 8 standards** for Python
+* Include Markdown explanations for clarity in notebooks
 
 ---
 
-### Next Steps (Optional)
+## 📜 Acknowledgments
 
-* Add a **Project Board** for tracking tasks (To Do, In Progress, Done).
-* Include **Contributing**, **Code of Conduct**, and **License** files.
-* Deploy workflows via GitHub Actions (CI/CD, testing, linting).
+### Acknowledgments
+- **Python Libraries:** pandas, numpy, matplotlib, seaborn, requests  
+- **Team Members:** All contributors to data cleaning, analysis, and reporting
+
+---
