@@ -56,7 +56,7 @@ pip install pandas numpy matplotlib seaborn requests
 Follow this branch naming pattern for consistency:
 
 ```
-<type>/<short-description>/<your-name>/<YYYYMMDD>
+<type>/<short-description>/<group-member-name>/<YYYYMMDD>
 ```
 
 * **type:** `feature`, `bugfix`, `hotfix`, `chore`
@@ -129,4 +129,5 @@ This project follows a structured, **phase-wise data analysis workflow**:
 - **Team Members:** All contributors to data cleaning, analysis, and reporting
 
 ---
+
 
